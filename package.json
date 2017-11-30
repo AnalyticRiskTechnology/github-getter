@@ -17,6 +17,7 @@
     "dev:test": "nodemon -q --exec \"node test/ | tap-notify | tap-spec\"",
     "coverage": "istanbul check-coverage --statements 100 --functions 100 --lines 100 --branches -100",
     "prepublish": "npm run build",
+    "postinstall": "npm run build",
     "build": "babel src -d lib",
     "lint": "standard",
     "build:watch": "babel src -d lib -w"
